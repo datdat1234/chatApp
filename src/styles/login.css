@@ -1,0 +1,114 @@
+.login_ctn {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #003459, #63A4FF00);
+  height: 100vh;
+  overflow: hidden;
+  font-size: 10px;
+}
+
+.login_wrapper {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login_wrapper h1 {
+  text-align: center;
+  font-size: 6.4em;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: "Cinzel Decorative";
+  margin-bottom: 0.2em;
+}
+
+.login_wrapper h1 i{
+  padding-right: 0.5em;
+}
+
+.signup {
+  text-align: center;
+  font-size: 2.5em;
+  color:#fff;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  margin-bottom: 4em;
+  font-weight: 500;
+}
+
+.signup span {
+  text-decoration: none;
+  color: #4BDEF2;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.signup span:hover {
+  text-decoration: underline;
+}
+
+.txt_field {
+  height: 0;
+  position: relative;
+}
+
+.txt_field:nth-child(2) {
+  margin-bottom: 23em;
+}
+
+.txt_field input {
+  position: absolute;
+  left: -50%;
+  width: 200%;
+  padding: 0 5px;
+  height: 7rem;
+  font-size: 2em;
+  border: none;
+  background-color: #fff;
+  outline: none;
+  border-radius: 10px;
+  padding: 0 20px;
+}
+
+.txt_field label {
+  position: absolute;
+  left: -45%;
+  top: 1.2em;
+  font-size: 2em;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: #00000040;
+  font-weight: 700;
+  pointer-events: none;
+  transition: .1s;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+  opacity: 0;
+}
+
+.txt_field i {
+  position: absolute;
+  right: -45%;
+  top: 0.8em;
+  font-size: 2.5em;
+  position: none;
+}
+
+.login_wrapper button {
+  margin-top: 4.3em;
+  outline: none;
+  border: none;
+  height: 7rem;
+  width: 100%;
+  font-size: 3em;
+  font-weight: 600;
+  background-color: #007EA790;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.login_wrapper button:hover {
+  box-shadow: 5px 5px 14px 5px #888888;
+  transition: .2s;
+}
