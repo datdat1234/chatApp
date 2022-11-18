@@ -1,5 +1,4 @@
 import React from "react";
-// import { useNavigate } from "react-router-dom";
 import "../styles/signUp.css";
 
 export function Signup(props) {
@@ -10,7 +9,7 @@ export function Signup(props) {
           <div className="signup_wrapper">
             <h1>
               Sign Up
-              <i class="fa-solid fa-xmark" onClick={() => {props.setTrigger(false);}}></i>  
+              <i className="fa-solid fa-xmark" onClick={() => {props.setTrigger(false);}}></i>  
             </h1>
             <form method="post">
               <div className="signup_txt_field">

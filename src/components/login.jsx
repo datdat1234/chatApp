@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../styles/login.css";
 import { Signup } from "./signUp";
 
@@ -7,13 +7,15 @@ export function Login() {
 
   const [signUpModal, setSignUpModal] = useState(false);
 
+  const navigate = useNavigate();
+
   return (
       <React.Fragment>
         <div className="login_ctn">
           <Signup trigger={signUpModal} setTrigger={setSignUpModal} />
           <div className="login_wrapper">
             <h1>
-              <i class="fa-brands fa-rocketchat"></i>
+              <i className="fa-brands fa-rocketchat"></i>
               MYCHAT
             </h1>
             <form method="post">
@@ -30,7 +32,7 @@ export function Login() {
                 <label>Password</label>
                 <i className="fa-solid fa-lock"></i>
               </div>
-              <button>Login</button>
+              <button onClick={() => {navigate("../chat")}}>Login</button>
             </form>
           </div>
         </div>
