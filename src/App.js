@@ -8,7 +8,7 @@ export const AppContext = React.createContext();
 function App() {
 
   return (
-    <AppContext.Provider>
+    <AppContext.Provider value={true}>
       <div id="App">
         <Routes>
           <Route path="/" element={<Login />} />

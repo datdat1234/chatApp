@@ -13,7 +13,7 @@ export function Chat() {
         let list = []
         for(let i=0; i<10; i++)
             list.push(
-            <div className="sidebar_chat">
+            <div className="sidebar_chat" key={i}>
                 <i className="fa-regular fa-circle-user"></i>
                 <div>
                     <h2>ABC</h2>
@@ -27,7 +27,7 @@ export function Chat() {
     const RenderChat = () => {
         let list = []
         for(let i=0; i<5; i++)
-            list.push(<p className="message is_sent">Lorem, ipsum dolor sit am...lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum alias earum ipsam sit nulla natus officiis dolorum placeat cum laborum, velit blanditiis porro eligendi aut perspiciatis dicta minima, a enim?</p>)
+            list.push(<p className="message is_sent" key={i}>Lorem, ipsum dolor sit am...lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum alias earum ipsam sit nulla natus officiis dolorum placeat cum laborum, velit blanditiis porro eligendi aut perspiciatis dicta minima, a enim?</p>)
         return list;
     }
 
